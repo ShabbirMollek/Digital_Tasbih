@@ -24,7 +24,7 @@ let allahakbarInitialValue = 0 ;
 subhanAllahIncrimentBtn.addEventListener('click' ,function(){
 
                 if (subhanAllahInitialValue == 33 ){
-                                return alert ("Completed");
+                                return alert ("Subhan Allah Completed");
                 }
 
                 subhanAllahInitialValue +=1 ;
@@ -46,7 +46,7 @@ subhanAllahDecrimentBtn.addEventListener('click' ,function(){
 alhamdulillahIncrimentBtn.addEventListener('click' ,function(){
 
                 if(alhamdullihInitialValue==33){
-                                return alert("Completed")
+                                return alert("Alhamdulliha Completed")
                 }
 
                 alhamdullihInitialValue += 1;
@@ -61,4 +61,38 @@ alhamdulillahDecrimentBtn.addEventListener('click' ,function(){
 
                 alhamdullihInitialValue -=1 ;
                 alhamdulillahDisplay.innerText =alhamdullihInitialValue;
+})
+// allahakbar button js:
+
+allahAkberIncrimentBtn.addEventListener('click' ,function(){
+
+                if(allahakbarInitialValue==34){
+                                return alert("Allah akbar Completed")
+                }
+
+                allahakbarInitialValue += 1;
+                allahAkberDisplay.innerText=allahakbarInitialValue;      
+})
+
+allahAkberDecrimentBtn.addEventListener('click' ,function(){
+
+                if(allahakbarInitialValue ==0){
+                                return alert('You can not get negative values')
+                }
+
+                allahakbarInitialValue -=1 ;
+                allahAkberDisplay.innerText =allahakbarInitialValue;
+})
+
+
+
+resetBtn.addEventListener('click' , function(){
+                subhanAllahDisplay.innerText=0;
+                alhamdulillahDisplay.innerText=0;
+                allahAkberDisplay.innerText=0;
+
+                subhanAllahInitialValue=0;
+                alhamdullihInitialValue=0;
+                allahakbarInitialValue=0 ;
+
 })
